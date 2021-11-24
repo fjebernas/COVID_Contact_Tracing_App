@@ -30,10 +30,10 @@ namespace ContactTracingApp
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtBxFN = new System.Windows.Forms.TextBox();
+            this.txtBxMN = new System.Windows.Forms.TextBox();
+            this.txtBxLN = new System.Windows.Forms.TextBox();
+            this.txtBxAge = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,7 +41,7 @@ namespace ContactTracingApp
             this.label6 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtBxAddress = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@ namespace ContactTracingApp
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtBxPN = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -75,33 +75,33 @@ namespace ContactTracingApp
             this.label1.Text = "Contact Tracer";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox1
+            // txtBxFN
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 118);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtBxFN.Location = new System.Drawing.Point(16, 118);
+            this.txtBxFN.Name = "txtBxFN";
+            this.txtBxFN.Size = new System.Drawing.Size(183, 20);
+            this.txtBxFN.TabIndex = 1;
             // 
-            // textBox2
+            // txtBxMN
             // 
-            this.textBox2.Location = new System.Drawing.Point(205, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtBxMN.Location = new System.Drawing.Point(205, 118);
+            this.txtBxMN.Name = "txtBxMN";
+            this.txtBxMN.Size = new System.Drawing.Size(183, 20);
+            this.txtBxMN.TabIndex = 1;
             // 
-            // textBox3
+            // txtBxLN
             // 
-            this.textBox3.Location = new System.Drawing.Point(394, 118);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(183, 20);
-            this.textBox3.TabIndex = 1;
+            this.txtBxLN.Location = new System.Drawing.Point(394, 118);
+            this.txtBxLN.Name = "txtBxLN";
+            this.txtBxLN.Size = new System.Drawing.Size(183, 20);
+            this.txtBxLN.TabIndex = 1;
             // 
-            // textBox4
+            // txtBxAge
             // 
-            this.textBox4.Location = new System.Drawing.Point(16, 170);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(89, 20);
-            this.textBox4.TabIndex = 1;
+            this.txtBxAge.Location = new System.Drawing.Point(16, 170);
+            this.txtBxAge.Name = "txtBxAge";
+            this.txtBxAge.Size = new System.Drawing.Size(89, 20);
+            this.txtBxAge.TabIndex = 1;
             // 
             // label2
             // 
@@ -187,12 +187,12 @@ namespace ContactTracingApp
             this.radioButton2.Text = "Female";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtBxAddress
             // 
-            this.textBox5.Location = new System.Drawing.Point(20, 606);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(561, 20);
-            this.textBox5.TabIndex = 1;
+            this.txtBxAddress.Location = new System.Drawing.Point(20, 606);
+            this.txtBxAddress.Name = "txtBxAddress";
+            this.txtBxAddress.Size = new System.Drawing.Size(561, 20);
+            this.txtBxAddress.TabIndex = 1;
             // 
             // label7
             // 
@@ -395,12 +395,12 @@ namespace ContactTracingApp
             this.label13.Text = "Phone number:";
             this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox6
+            // txtBxPN
             // 
-            this.textBox6.Location = new System.Drawing.Point(20, 550);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(129, 20);
-            this.textBox6.TabIndex = 1;
+            this.txtBxPN.Location = new System.Drawing.Point(20, 550);
+            this.txtBxPN.Name = "txtBxPN";
+            this.txtBxPN.Size = new System.Drawing.Size(129, 20);
+            this.txtBxPN.TabIndex = 1;
             // 
             // button1
             // 
@@ -412,6 +412,7 @@ namespace ContactTracingApp
             this.button1.TabIndex = 5;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ContactTracer
             // 
@@ -432,12 +433,12 @@ namespace ContactTracingApp
             this.Controls.Add(this.radioButton5);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBxLN);
+            this.Controls.Add(this.txtBxMN);
+            this.Controls.Add(this.txtBxAge);
+            this.Controls.Add(this.txtBxPN);
+            this.Controls.Add(this.txtBxAddress);
+            this.Controls.Add(this.txtBxFN);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label6);
@@ -462,10 +463,10 @@ namespace ContactTracingApp
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtBxFN;
+        private System.Windows.Forms.TextBox txtBxMN;
+        private System.Windows.Forms.TextBox txtBxLN;
+        private System.Windows.Forms.TextBox txtBxAge;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -473,7 +474,7 @@ namespace ContactTracingApp
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtBxAddress;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Label label8;
@@ -491,7 +492,7 @@ namespace ContactTracingApp
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtBxPN;
         private System.Windows.Forms.Button button1;
     }
 }
