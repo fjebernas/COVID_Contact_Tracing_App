@@ -18,7 +18,7 @@ namespace ContactTracingApp
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void SubmitButton_Click(object sender, EventArgs e)
         {
             string[] data = new string[6];
             data[0] = txtBxFN.Text;

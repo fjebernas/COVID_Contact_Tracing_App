@@ -60,7 +60,7 @@ namespace ContactTracingApp
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtBxPN = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SubmitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -402,17 +402,17 @@ namespace ContactTracingApp
             this.txtBxPN.Size = new System.Drawing.Size(129, 20);
             this.txtBxPN.TabIndex = 1;
             // 
-            // button1
+            // SubmitButton
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSalmon;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(244, 658);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 47);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.SubmitButton.BackColor = System.Drawing.Color.LightSalmon;
+            this.SubmitButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubmitButton.Location = new System.Drawing.Point(244, 658);
+            this.SubmitButton.Name = "SubmitButton";
+            this.SubmitButton.Size = new System.Drawing.Size(100, 47);
+            this.SubmitButton.TabIndex = 5;
+            this.SubmitButton.Text = "Submit";
+            this.SubmitButton.UseVisualStyleBackColor = false;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // ContactTracer
             // 
@@ -420,7 +420,7 @@ namespace ContactTracingApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(587, 731);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
@@ -493,7 +493,7 @@ namespace ContactTracingApp
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtBxPN;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SubmitButton;
     }
 }
 
