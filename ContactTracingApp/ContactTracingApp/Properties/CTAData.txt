@@ -1,6 +1,6 @@
 First name: John
-Middle name: 
+Middle name: Guns
 Last name: Wick
-Age: 52
+Age: 123
 Phone number: 123123123
-Address: Continental
+Address: The Continental

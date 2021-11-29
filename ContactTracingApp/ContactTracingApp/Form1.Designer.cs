@@ -29,377 +29,315 @@ namespace ContactTracingApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelMainTitle = new System.Windows.Forms.Label();
             this.txtBxFN = new System.Windows.Forms.TextBox();
             this.txtBxMN = new System.Windows.Forms.TextBox();
             this.txtBxLN = new System.Windows.Forms.TextBox();
             this.txtBxAge = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.labelFN = new System.Windows.Forms.Label();
+            this.labelMN = new System.Windows.Forms.Label();
+            this.labelLN = new System.Windows.Forms.Label();
+            this.labelAge = new System.Windows.Forms.Label();
+            this.labelGender = new System.Windows.Forms.Label();
+            this.rdoBtnMale = new System.Windows.Forms.RadioButton();
+            this.rdoBtnFemale = new System.Windows.Forms.RadioButton();
             this.txtBxAddress = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.label8 = new System.Windows.Forms.Label();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.labelAddress = new System.Windows.Forms.Label();
+            this.rdoBtnIPNTS = new System.Windows.Forms.RadioButton();
+            this.labelQuesOne = new System.Windows.Forms.Label();
+            this.labelQuesTwoPt1 = new System.Windows.Forms.Label();
+            this.labelQuesTwoPt2 = new System.Windows.Forms.Label();
+            this.labelQuesThreePt1 = new System.Windows.Forms.Label();
+            this.labelQuesThreePt2 = new System.Windows.Forms.Label();
+            this.chkBxQuesOneFever = new System.Windows.Forms.CheckBox();
+            this.chkBxQuesOneCough = new System.Windows.Forms.CheckBox();
+            this.chkBxQuesOneBD = new System.Windows.Forms.CheckBox();
+            this.labelPN = new System.Windows.Forms.Label();
             this.txtBxPN = new System.Windows.Forms.TextBox();
             this.SubmitButton = new System.Windows.Forms.Button();
+            this.groupBoxQuesTwo = new System.Windows.Forms.GroupBox();
+            this.rdoBtnQuesTwoNS = new System.Windows.Forms.RadioButton();
+            this.rdoBtnQuesTwoNo = new System.Windows.Forms.RadioButton();
+            this.rdoBtnQuesTwoYes = new System.Windows.Forms.RadioButton();
+            this.groupBoxQuesOne = new System.Windows.Forms.GroupBox();
+            this.rdoBtnQuesOneNS = new System.Windows.Forms.RadioButton();
+            this.rdoBtnQuesOneTwo = new System.Windows.Forms.RadioButton();
+            this.rdoBtnQuesOneYes = new System.Windows.Forms.RadioButton();
+            this.groupBoxQuesTwo.SuspendLayout();
+            this.groupBoxQuesOne.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // labelMainTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(167, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Contact Tracer";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelMainTitle.AutoSize = true;
+            this.labelMainTitle.BackColor = System.Drawing.Color.Transparent;
+            this.labelMainTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMainTitle.Location = new System.Drawing.Point(167, 23);
+            this.labelMainTitle.Name = "labelMainTitle";
+            this.labelMainTitle.Size = new System.Drawing.Size(253, 39);
+            this.labelMainTitle.TabIndex = 0;
+            this.labelMainTitle.Text = "Contact Tracer";
+            this.labelMainTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtBxFN
             // 
+            this.txtBxFN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxFN.Location = new System.Drawing.Point(16, 118);
             this.txtBxFN.Name = "txtBxFN";
-            this.txtBxFN.Size = new System.Drawing.Size(183, 20);
+            this.txtBxFN.Size = new System.Drawing.Size(183, 27);
             this.txtBxFN.TabIndex = 1;
             // 
             // txtBxMN
             // 
+            this.txtBxMN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxMN.Location = new System.Drawing.Point(205, 118);
             this.txtBxMN.Name = "txtBxMN";
-            this.txtBxMN.Size = new System.Drawing.Size(183, 20);
+            this.txtBxMN.Size = new System.Drawing.Size(183, 27);
             this.txtBxMN.TabIndex = 1;
             // 
             // txtBxLN
             // 
+            this.txtBxLN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxLN.Location = new System.Drawing.Point(394, 118);
             this.txtBxLN.Name = "txtBxLN";
-            this.txtBxLN.Size = new System.Drawing.Size(183, 20);
+            this.txtBxLN.Size = new System.Drawing.Size(183, 27);
             this.txtBxLN.TabIndex = 1;
             // 
             // txtBxAge
             // 
-            this.txtBxAge.Location = new System.Drawing.Point(16, 170);
+            this.txtBxAge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxAge.Location = new System.Drawing.Point(16, 173);
             this.txtBxAge.Name = "txtBxAge";
-            this.txtBxAge.Size = new System.Drawing.Size(89, 20);
+            this.txtBxAge.Size = new System.Drawing.Size(89, 27);
             this.txtBxAge.TabIndex = 1;
             // 
-            // label2
+            // labelFN
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 95);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "First Name:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelFN.AutoSize = true;
+            this.labelFN.BackColor = System.Drawing.Color.Transparent;
+            this.labelFN.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFN.Location = new System.Drawing.Point(16, 95);
+            this.labelFN.Name = "labelFN";
+            this.labelFN.Size = new System.Drawing.Size(87, 20);
+            this.labelFN.TabIndex = 0;
+            this.labelFN.Text = "First Name:";
+            this.labelFN.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label3
+            // labelMN
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(201, 95);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Middle Name:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelMN.AutoSize = true;
+            this.labelMN.BackColor = System.Drawing.Color.Transparent;
+            this.labelMN.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMN.Location = new System.Drawing.Point(201, 95);
+            this.labelMN.Name = "labelMN";
+            this.labelMN.Size = new System.Drawing.Size(112, 20);
+            this.labelMN.TabIndex = 0;
+            this.labelMN.Text = "Middle Name:";
+            this.labelMN.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label4
+            // labelLN
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(394, 95);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 20);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Last Name:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelLN.AutoSize = true;
+            this.labelLN.BackColor = System.Drawing.Color.Transparent;
+            this.labelLN.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLN.Location = new System.Drawing.Point(394, 95);
+            this.labelLN.Name = "labelLN";
+            this.labelLN.Size = new System.Drawing.Size(89, 20);
+            this.labelLN.TabIndex = 0;
+            this.labelLN.Text = "Last Name:";
+            this.labelLN.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label5
+            // labelAge
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(16, 147);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 20);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Age:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelAge.AutoSize = true;
+            this.labelAge.BackColor = System.Drawing.Color.Transparent;
+            this.labelAge.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAge.Location = new System.Drawing.Point(16, 150);
+            this.labelAge.Name = "labelAge";
+            this.labelAge.Size = new System.Drawing.Size(44, 20);
+            this.labelAge.TabIndex = 0;
+            this.labelAge.Text = "Age:";
+            this.labelAge.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label6
+            // labelGender
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(201, 149);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 20);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Gender:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelGender.AutoSize = true;
+            this.labelGender.BackColor = System.Drawing.Color.Transparent;
+            this.labelGender.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGender.Location = new System.Drawing.Point(201, 152);
+            this.labelGender.Name = "labelGender";
+            this.labelGender.Size = new System.Drawing.Size(70, 20);
+            this.labelGender.TabIndex = 0;
+            this.labelGender.Text = "Gender:";
+            this.labelGender.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // radioButton1
+            // rdoBtnMale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(217, 172);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(54, 20);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdoBtnMale.AutoSize = true;
+            this.rdoBtnMale.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoBtnMale.Location = new System.Drawing.Point(217, 179);
+            this.rdoBtnMale.Name = "rdoBtnMale";
+            this.rdoBtnMale.Size = new System.Drawing.Size(56, 21);
+            this.rdoBtnMale.TabIndex = 2;
+            this.rdoBtnMale.TabStop = true;
+            this.rdoBtnMale.Text = "Male";
+            this.rdoBtnMale.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdoBtnFemale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(289, 172);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(65, 20);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdoBtnFemale.AutoSize = true;
+            this.rdoBtnFemale.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoBtnFemale.Location = new System.Drawing.Point(289, 179);
+            this.rdoBtnFemale.Name = "rdoBtnFemale";
+            this.rdoBtnFemale.Size = new System.Drawing.Size(70, 21);
+            this.rdoBtnFemale.TabIndex = 3;
+            this.rdoBtnFemale.TabStop = true;
+            this.rdoBtnFemale.Text = "Female";
+            this.rdoBtnFemale.UseVisualStyleBackColor = true;
             // 
             // txtBxAddress
             // 
+            this.txtBxAddress.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxAddress.Location = new System.Drawing.Point(20, 606);
             this.txtBxAddress.Name = "txtBxAddress";
-            this.txtBxAddress.Size = new System.Drawing.Size(561, 20);
+            this.txtBxAddress.Size = new System.Drawing.Size(561, 27);
             this.txtBxAddress.TabIndex = 1;
             // 
-            // label7
+            // labelAddress
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(20, 583);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 20);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Address:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelAddress.AutoSize = true;
+            this.labelAddress.BackColor = System.Drawing.Color.Transparent;
+            this.labelAddress.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAddress.Location = new System.Drawing.Point(20, 583);
+            this.labelAddress.Name = "labelAddress";
+            this.labelAddress.Size = new System.Drawing.Size(71, 20);
+            this.labelAddress.TabIndex = 0;
+            this.labelAddress.Text = "Address:";
+            this.labelAddress.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // radioButton3
+            // rdoBtnIPNTS
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(377, 172);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(119, 20);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "I prefer not to say";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdoBtnIPNTS.AutoSize = true;
+            this.rdoBtnIPNTS.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoBtnIPNTS.Location = new System.Drawing.Point(377, 179);
+            this.rdoBtnIPNTS.Name = "rdoBtnIPNTS";
+            this.rdoBtnIPNTS.Size = new System.Drawing.Size(129, 21);
+            this.rdoBtnIPNTS.TabIndex = 3;
+            this.rdoBtnIPNTS.TabStop = true;
+            this.rdoBtnIPNTS.Text = "I prefer not to say";
+            this.rdoBtnIPNTS.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // labelQuesOne
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(20, 212);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(548, 20);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Have you traveled outside the country anytime from last month until now?";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelQuesOne.AutoSize = true;
+            this.labelQuesOne.BackColor = System.Drawing.Color.Transparent;
+            this.labelQuesOne.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuesOne.Location = new System.Drawing.Point(20, 215);
+            this.labelQuesOne.Name = "labelQuesOne";
+            this.labelQuesOne.Size = new System.Drawing.Size(548, 20);
+            this.labelQuesOne.TabIndex = 0;
+            this.labelQuesOne.Text = "Have you traveled outside the country anytime from last month until now?";
+            this.labelQuesOne.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // radioButton4
+            // labelQuesTwoPt1
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(24, 248);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(44, 20);
-            this.radioButton4.TabIndex = 2;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Yes";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.labelQuesTwoPt1.AutoSize = true;
+            this.labelQuesTwoPt1.BackColor = System.Drawing.Color.Transparent;
+            this.labelQuesTwoPt1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuesTwoPt1.Location = new System.Drawing.Point(20, 294);
+            this.labelQuesTwoPt1.Name = "labelQuesTwoPt1";
+            this.labelQuesTwoPt1.Size = new System.Drawing.Size(546, 20);
+            this.labelQuesTwoPt1.TabIndex = 0;
+            this.labelQuesTwoPt1.Text = "Have you come into contact with anyone who has traveled outside your ";
+            this.labelQuesTwoPt1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // radioButton5
+            // labelQuesTwoPt2
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(84, 248);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(41, 20);
-            this.radioButton5.TabIndex = 2;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "No";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.labelQuesTwoPt2.AutoSize = true;
+            this.labelQuesTwoPt2.BackColor = System.Drawing.Color.Transparent;
+            this.labelQuesTwoPt2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuesTwoPt2.Location = new System.Drawing.Point(20, 314);
+            this.labelQuesTwoPt2.Name = "labelQuesTwoPt2";
+            this.labelQuesTwoPt2.Size = new System.Drawing.Size(393, 20);
+            this.labelQuesTwoPt2.TabIndex = 0;
+            this.labelQuesTwoPt2.Text = "country between the period of last month until now?";
+            this.labelQuesTwoPt2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // radioButton6
+            // labelQuesThreePt1
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(144, 248);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(69, 20);
-            this.radioButton6.TabIndex = 2;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Not sure";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.labelQuesThreePt1.AutoSize = true;
+            this.labelQuesThreePt1.BackColor = System.Drawing.Color.Transparent;
+            this.labelQuesThreePt1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuesThreePt1.Location = new System.Drawing.Point(20, 394);
+            this.labelQuesThreePt1.Name = "labelQuesThreePt1";
+            this.labelQuesThreePt1.Size = new System.Drawing.Size(521, 20);
+            this.labelQuesThreePt1.TabIndex = 0;
+            this.labelQuesThreePt1.Text = "Do you currently have any of the following conditions during this time?";
+            this.labelQuesThreePt1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label9
+            // labelQuesThreePt2
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(20, 288);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(546, 20);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Have you come into contact with anyone who has traveled outside your ";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelQuesThreePt2.AutoSize = true;
+            this.labelQuesThreePt2.BackColor = System.Drawing.Color.Transparent;
+            this.labelQuesThreePt2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuesThreePt2.Location = new System.Drawing.Point(20, 414);
+            this.labelQuesThreePt2.Name = "labelQuesThreePt2";
+            this.labelQuesThreePt2.Size = new System.Drawing.Size(170, 20);
+            this.labelQuesThreePt2.TabIndex = 0;
+            this.labelQuesThreePt2.Text = "(Check all that apply):";
+            this.labelQuesThreePt2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label10
+            // chkBxQuesOneFever
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(20, 308);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(393, 20);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "country between the period of last month until now?";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.chkBxQuesOneFever.AutoSize = true;
+            this.chkBxQuesOneFever.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkBxQuesOneFever.Location = new System.Drawing.Point(24, 447);
+            this.chkBxQuesOneFever.Name = "chkBxQuesOneFever";
+            this.chkBxQuesOneFever.Size = new System.Drawing.Size(61, 21);
+            this.chkBxQuesOneFever.TabIndex = 4;
+            this.chkBxQuesOneFever.Text = "Fever";
+            this.chkBxQuesOneFever.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // chkBxQuesOneCough
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(24, 348);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(44, 20);
-            this.radioButton7.TabIndex = 2;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Yes";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.chkBxQuesOneCough.AutoSize = true;
+            this.chkBxQuesOneCough.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkBxQuesOneCough.Location = new System.Drawing.Point(24, 470);
+            this.chkBxQuesOneCough.Name = "chkBxQuesOneCough";
+            this.chkBxQuesOneCough.Size = new System.Drawing.Size(66, 21);
+            this.chkBxQuesOneCough.TabIndex = 4;
+            this.chkBxQuesOneCough.Text = "Cough";
+            this.chkBxQuesOneCough.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // chkBxQuesOneBD
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(84, 348);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(41, 20);
-            this.radioButton8.TabIndex = 2;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "No";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.chkBxQuesOneBD.AutoSize = true;
+            this.chkBxQuesOneBD.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkBxQuesOneBD.Location = new System.Drawing.Point(24, 493);
+            this.chkBxQuesOneBD.Name = "chkBxQuesOneBD";
+            this.chkBxQuesOneBD.Size = new System.Drawing.Size(139, 21);
+            this.chkBxQuesOneBD.TabIndex = 4;
+            this.chkBxQuesOneBD.Text = "Breathing Difficulty";
+            this.chkBxQuesOneBD.UseVisualStyleBackColor = true;
             // 
-            // radioButton9
+            // labelPN
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(144, 348);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(69, 20);
-            this.radioButton9.TabIndex = 2;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Not sure";
-            this.radioButton9.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(20, 394);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(521, 20);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Do you currently have any of the following conditions during this time?";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(20, 414);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(170, 20);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "(Check all that apply):";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(24, 447);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(57, 20);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Fever";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(24, 470);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(64, 20);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "Cough";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(24, 493);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(125, 20);
-            this.checkBox3.TabIndex = 4;
-            this.checkBox3.Text = "Breathing Difficulty";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(20, 527);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(120, 20);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Phone number:";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelPN.AutoSize = true;
+            this.labelPN.BackColor = System.Drawing.Color.Transparent;
+            this.labelPN.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPN.Location = new System.Drawing.Point(20, 527);
+            this.labelPN.Name = "labelPN";
+            this.labelPN.Size = new System.Drawing.Size(120, 20);
+            this.labelPN.TabIndex = 0;
+            this.labelPN.Text = "Phone number:";
+            this.labelPN.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtBxPN
             // 
+            this.txtBxPN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxPN.Location = new System.Drawing.Point(20, 550);
             this.txtBxPN.Name = "txtBxPN";
-            this.txtBxPN.Size = new System.Drawing.Size(129, 20);
+            this.txtBxPN.Size = new System.Drawing.Size(129, 27);
             this.txtBxPN.TabIndex = 1;
             // 
             // SubmitButton
@@ -414,47 +352,145 @@ namespace ContactTracingApp
             this.SubmitButton.UseVisualStyleBackColor = false;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
+            // groupBoxQuesTwo
+            // 
+            this.groupBoxQuesTwo.Controls.Add(this.rdoBtnQuesTwoNS);
+            this.groupBoxQuesTwo.Controls.Add(this.rdoBtnQuesTwoNo);
+            this.groupBoxQuesTwo.Controls.Add(this.rdoBtnQuesTwoYes);
+            this.groupBoxQuesTwo.Location = new System.Drawing.Point(-6, 332);
+            this.groupBoxQuesTwo.Margin = new System.Windows.Forms.Padding(1);
+            this.groupBoxQuesTwo.Name = "groupBoxQuesTwo";
+            this.groupBoxQuesTwo.Padding = new System.Windows.Forms.Padding(1);
+            this.groupBoxQuesTwo.Size = new System.Drawing.Size(237, 58);
+            this.groupBoxQuesTwo.TabIndex = 6;
+            this.groupBoxQuesTwo.TabStop = false;
+            // 
+            // rdoBtnQuesTwoNS
+            // 
+            this.rdoBtnQuesTwoNS.AutoSize = true;
+            this.rdoBtnQuesTwoNS.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoBtnQuesTwoNS.Location = new System.Drawing.Point(150, 23);
+            this.rdoBtnQuesTwoNS.Name = "rdoBtnQuesTwoNS";
+            this.rdoBtnQuesTwoNS.Size = new System.Drawing.Size(75, 21);
+            this.rdoBtnQuesTwoNS.TabIndex = 3;
+            this.rdoBtnQuesTwoNS.TabStop = true;
+            this.rdoBtnQuesTwoNS.Text = "Not sure";
+            this.rdoBtnQuesTwoNS.UseVisualStyleBackColor = true;
+            // 
+            // rdoBtnQuesTwoNo
+            // 
+            this.rdoBtnQuesTwoNo.AutoSize = true;
+            this.rdoBtnQuesTwoNo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoBtnQuesTwoNo.Location = new System.Drawing.Point(90, 23);
+            this.rdoBtnQuesTwoNo.Name = "rdoBtnQuesTwoNo";
+            this.rdoBtnQuesTwoNo.Size = new System.Drawing.Size(43, 21);
+            this.rdoBtnQuesTwoNo.TabIndex = 4;
+            this.rdoBtnQuesTwoNo.TabStop = true;
+            this.rdoBtnQuesTwoNo.Text = "No";
+            this.rdoBtnQuesTwoNo.UseVisualStyleBackColor = true;
+            // 
+            // rdoBtnQuesTwoYes
+            // 
+            this.rdoBtnQuesTwoYes.AutoSize = true;
+            this.rdoBtnQuesTwoYes.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoBtnQuesTwoYes.Location = new System.Drawing.Point(30, 23);
+            this.rdoBtnQuesTwoYes.Name = "rdoBtnQuesTwoYes";
+            this.rdoBtnQuesTwoYes.Size = new System.Drawing.Size(46, 21);
+            this.rdoBtnQuesTwoYes.TabIndex = 5;
+            this.rdoBtnQuesTwoYes.TabStop = true;
+            this.rdoBtnQuesTwoYes.Text = "Yes";
+            this.rdoBtnQuesTwoYes.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxQuesOne
+            // 
+            this.groupBoxQuesOne.Controls.Add(this.rdoBtnQuesOneNS);
+            this.groupBoxQuesOne.Controls.Add(this.rdoBtnQuesOneTwo);
+            this.groupBoxQuesOne.Controls.Add(this.rdoBtnQuesOneYes);
+            this.groupBoxQuesOne.Location = new System.Drawing.Point(-6, 233);
+            this.groupBoxQuesOne.Margin = new System.Windows.Forms.Padding(1);
+            this.groupBoxQuesOne.Name = "groupBoxQuesOne";
+            this.groupBoxQuesOne.Padding = new System.Windows.Forms.Padding(1);
+            this.groupBoxQuesOne.Size = new System.Drawing.Size(237, 58);
+            this.groupBoxQuesOne.TabIndex = 7;
+            this.groupBoxQuesOne.TabStop = false;
+            // 
+            // rdoBtnQuesOneNS
+            // 
+            this.rdoBtnQuesOneNS.AutoSize = true;
+            this.rdoBtnQuesOneNS.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoBtnQuesOneNS.Location = new System.Drawing.Point(150, 23);
+            this.rdoBtnQuesOneNS.Name = "rdoBtnQuesOneNS";
+            this.rdoBtnQuesOneNS.Size = new System.Drawing.Size(75, 21);
+            this.rdoBtnQuesOneNS.TabIndex = 3;
+            this.rdoBtnQuesOneNS.TabStop = true;
+            this.rdoBtnQuesOneNS.Text = "Not sure";
+            this.rdoBtnQuesOneNS.UseVisualStyleBackColor = true;
+            // 
+            // rdoBtnQuesOneTwo
+            // 
+            this.rdoBtnQuesOneTwo.AutoSize = true;
+            this.rdoBtnQuesOneTwo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoBtnQuesOneTwo.Location = new System.Drawing.Point(90, 23);
+            this.rdoBtnQuesOneTwo.Name = "rdoBtnQuesOneTwo";
+            this.rdoBtnQuesOneTwo.Size = new System.Drawing.Size(43, 21);
+            this.rdoBtnQuesOneTwo.TabIndex = 4;
+            this.rdoBtnQuesOneTwo.TabStop = true;
+            this.rdoBtnQuesOneTwo.Text = "No";
+            this.rdoBtnQuesOneTwo.UseVisualStyleBackColor = true;
+            // 
+            // rdoBtnQuesOneYes
+            // 
+            this.rdoBtnQuesOneYes.AutoSize = true;
+            this.rdoBtnQuesOneYes.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoBtnQuesOneYes.Location = new System.Drawing.Point(30, 23);
+            this.rdoBtnQuesOneYes.Name = "rdoBtnQuesOneYes";
+            this.rdoBtnQuesOneYes.Size = new System.Drawing.Size(46, 21);
+            this.rdoBtnQuesOneYes.TabIndex = 5;
+            this.rdoBtnQuesOneYes.TabStop = true;
+            this.rdoBtnQuesOneYes.Text = "Yes";
+            this.rdoBtnQuesOneYes.UseVisualStyleBackColor = true;
+            // 
             // ContactTracer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(587, 731);
+            this.Controls.Add(this.groupBoxQuesOne);
+            this.Controls.Add(this.groupBoxQuesTwo);
             this.Controls.Add(this.SubmitButton);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton9);
-            this.Controls.Add(this.radioButton8);
-            this.Controls.Add(this.radioButton6);
-            this.Controls.Add(this.radioButton7);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.chkBxQuesOneBD);
+            this.Controls.Add(this.chkBxQuesOneCough);
+            this.Controls.Add(this.chkBxQuesOneFever);
+            this.Controls.Add(this.rdoBtnIPNTS);
+            this.Controls.Add(this.rdoBtnFemale);
+            this.Controls.Add(this.rdoBtnMale);
             this.Controls.Add(this.txtBxLN);
             this.Controls.Add(this.txtBxMN);
             this.Controls.Add(this.txtBxAge);
             this.Controls.Add(this.txtBxPN);
             this.Controls.Add(this.txtBxAddress);
             this.Controls.Add(this.txtBxFN);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelLN);
+            this.Controls.Add(this.labelMN);
+            this.Controls.Add(this.labelGender);
+            this.Controls.Add(this.labelQuesTwoPt2);
+            this.Controls.Add(this.labelQuesThreePt2);
+            this.Controls.Add(this.labelQuesThreePt1);
+            this.Controls.Add(this.labelQuesTwoPt1);
+            this.Controls.Add(this.labelQuesOne);
+            this.Controls.Add(this.labelPN);
+            this.Controls.Add(this.labelAddress);
+            this.Controls.Add(this.labelAge);
+            this.Controls.Add(this.labelFN);
+            this.Controls.Add(this.labelMainTitle);
             this.Name = "ContactTracer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing App";
+            this.groupBoxQuesTwo.ResumeLayout(false);
+            this.groupBoxQuesTwo.PerformLayout();
+            this.groupBoxQuesOne.ResumeLayout(false);
+            this.groupBoxQuesOne.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -462,38 +498,40 @@ namespace ContactTracingApp
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelMainTitle;
         private System.Windows.Forms.TextBox txtBxFN;
         private System.Windows.Forms.TextBox txtBxMN;
         private System.Windows.Forms.TextBox txtBxLN;
         private System.Windows.Forms.TextBox txtBxAge;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Label labelFN;
+        private System.Windows.Forms.Label labelMN;
+        private System.Windows.Forms.Label labelLN;
+        private System.Windows.Forms.Label labelAge;
+        private System.Windows.Forms.Label labelGender;
+        private System.Windows.Forms.RadioButton rdoBtnMale;
+        private System.Windows.Forms.RadioButton rdoBtnFemale;
         private System.Windows.Forms.TextBox txtBxAddress;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label labelAddress;
+        private System.Windows.Forms.RadioButton rdoBtnIPNTS;
+        private System.Windows.Forms.Label labelQuesOne;
+        private System.Windows.Forms.Label labelQuesTwoPt1;
+        private System.Windows.Forms.Label labelQuesTwoPt2;
+        private System.Windows.Forms.Label labelQuesThreePt1;
+        private System.Windows.Forms.Label labelQuesThreePt2;
+        private System.Windows.Forms.CheckBox chkBxQuesOneFever;
+        private System.Windows.Forms.CheckBox chkBxQuesOneCough;
+        private System.Windows.Forms.CheckBox chkBxQuesOneBD;
+        private System.Windows.Forms.Label labelPN;
         private System.Windows.Forms.TextBox txtBxPN;
         private System.Windows.Forms.Button SubmitButton;
+        private System.Windows.Forms.GroupBox groupBoxQuesTwo;
+        private System.Windows.Forms.RadioButton rdoBtnQuesTwoNS;
+        private System.Windows.Forms.RadioButton rdoBtnQuesTwoNo;
+        private System.Windows.Forms.RadioButton rdoBtnQuesTwoYes;
+        private System.Windows.Forms.GroupBox groupBoxQuesOne;
+        private System.Windows.Forms.RadioButton rdoBtnQuesOneNS;
+        private System.Windows.Forms.RadioButton rdoBtnQuesOneTwo;
+        private System.Windows.Forms.RadioButton rdoBtnQuesOneYes;
     }
 }
 
