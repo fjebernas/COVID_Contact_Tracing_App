@@ -77,14 +77,6 @@ namespace ContactTracingApp
             MessageBox.Show("Submitted successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void txtBoxChar_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((!char.IsLetter(e.KeyChar)) && (!char.IsWhiteSpace(e.KeyChar)) && (!char.IsControl(e.KeyChar)))
-            {
-                e.Handled = true;
-            }
-        }
-
         private string GetGender(RadioButton radioButton)
         {
             if (radioButton.Checked)
@@ -119,6 +111,22 @@ namespace ContactTracingApp
                 quesThreeAns = checkbox.Text;
             }
             return quesThreeAns;
+        }
+
+        private void txtBoxChar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsLetter(e.KeyChar)) && (!char.IsWhiteSpace(e.KeyChar)) && (!char.IsControl(e.KeyChar)))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtBoxNum_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((!char.IsDigit(e.KeyChar)) && (!char.IsControl(e.KeyChar)))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

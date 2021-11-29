@@ -113,6 +113,7 @@ namespace ContactTracingApp
             this.txtBxAge.Name = "txtBxAge";
             this.txtBxAge.Size = new System.Drawing.Size(89, 27);
             this.txtBxAge.TabIndex = 1;
+            this.txtBxAge.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNum_KeyPress);
             // 
             // labelFN
             // 
@@ -342,6 +343,7 @@ namespace ContactTracingApp
             this.txtBxPN.Name = "txtBxPN";
             this.txtBxPN.Size = new System.Drawing.Size(129, 27);
             this.txtBxPN.TabIndex = 1;
+            this.txtBxPN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNum_KeyPress);
             // 
             // SubmitButton
             // 
