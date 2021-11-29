@@ -61,7 +61,7 @@ namespace ContactTracingApp
             this.rdoBtnQuesTwoYes = new System.Windows.Forms.RadioButton();
             this.groupBoxQuesOne = new System.Windows.Forms.GroupBox();
             this.rdoBtnQuesOneNS = new System.Windows.Forms.RadioButton();
-            this.rdoBtnQuesOneTwo = new System.Windows.Forms.RadioButton();
+            this.rdoBtnQuesOneNo = new System.Windows.Forms.RadioButton();
             this.rdoBtnQuesOneYes = new System.Windows.Forms.RadioButton();
             this.groupBoxQuesTwo.SuspendLayout();
             this.groupBoxQuesOne.SuspendLayout();
@@ -404,7 +404,7 @@ namespace ContactTracingApp
             // groupBoxQuesOne
             // 
             this.groupBoxQuesOne.Controls.Add(this.rdoBtnQuesOneNS);
-            this.groupBoxQuesOne.Controls.Add(this.rdoBtnQuesOneTwo);
+            this.groupBoxQuesOne.Controls.Add(this.rdoBtnQuesOneNo);
             this.groupBoxQuesOne.Controls.Add(this.rdoBtnQuesOneYes);
             this.groupBoxQuesOne.Location = new System.Drawing.Point(-6, 233);
             this.groupBoxQuesOne.Margin = new System.Windows.Forms.Padding(1);
@@ -426,17 +426,17 @@ namespace ContactTracingApp
             this.rdoBtnQuesOneNS.Text = "Not sure";
             this.rdoBtnQuesOneNS.UseVisualStyleBackColor = true;
             // 
-            // rdoBtnQuesOneTwo
+            // rdoBtnQuesOneNo
             // 
-            this.rdoBtnQuesOneTwo.AutoSize = true;
-            this.rdoBtnQuesOneTwo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoBtnQuesOneTwo.Location = new System.Drawing.Point(90, 23);
-            this.rdoBtnQuesOneTwo.Name = "rdoBtnQuesOneTwo";
-            this.rdoBtnQuesOneTwo.Size = new System.Drawing.Size(43, 21);
-            this.rdoBtnQuesOneTwo.TabIndex = 4;
-            this.rdoBtnQuesOneTwo.TabStop = true;
-            this.rdoBtnQuesOneTwo.Text = "No";
-            this.rdoBtnQuesOneTwo.UseVisualStyleBackColor = true;
+            this.rdoBtnQuesOneNo.AutoSize = true;
+            this.rdoBtnQuesOneNo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoBtnQuesOneNo.Location = new System.Drawing.Point(90, 23);
+            this.rdoBtnQuesOneNo.Name = "rdoBtnQuesOneNo";
+            this.rdoBtnQuesOneNo.Size = new System.Drawing.Size(43, 21);
+            this.rdoBtnQuesOneNo.TabIndex = 4;
+            this.rdoBtnQuesOneNo.TabStop = true;
+            this.rdoBtnQuesOneNo.Text = "No";
+            this.rdoBtnQuesOneNo.UseVisualStyleBackColor = true;
             // 
             // rdoBtnQuesOneYes
             // 
@@ -530,7 +530,7 @@ namespace ContactTracingApp
         private System.Windows.Forms.RadioButton rdoBtnQuesTwoYes;
         private System.Windows.Forms.GroupBox groupBoxQuesOne;
         private System.Windows.Forms.RadioButton rdoBtnQuesOneNS;
-        private System.Windows.Forms.RadioButton rdoBtnQuesOneTwo;
+        private System.Windows.Forms.RadioButton rdoBtnQuesOneNo;
         private System.Windows.Forms.RadioButton rdoBtnQuesOneYes;
     }
 }
