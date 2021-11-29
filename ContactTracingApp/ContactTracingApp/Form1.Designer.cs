@@ -63,6 +63,7 @@ namespace ContactTracingApp
             this.rdoBtnQuesOneNS = new System.Windows.Forms.RadioButton();
             this.rdoBtnQuesOneNo = new System.Windows.Forms.RadioButton();
             this.rdoBtnQuesOneYes = new System.Windows.Forms.RadioButton();
+            this.labelFocusGetter = new System.Windows.Forms.Label();
             this.groupBoxQuesTwo.SuspendLayout();
             this.groupBoxQuesOne.SuspendLayout();
             this.SuspendLayout();
@@ -82,38 +83,54 @@ namespace ContactTracingApp
             // txtBxFN
             // 
             this.txtBxFN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxFN.ForeColor = System.Drawing.Color.DarkGray;
             this.txtBxFN.Location = new System.Drawing.Point(16, 118);
             this.txtBxFN.Name = "txtBxFN";
             this.txtBxFN.Size = new System.Drawing.Size(183, 27);
             this.txtBxFN.TabIndex = 1;
+            this.txtBxFN.Text = "(Required field)";
+            this.txtBxFN.Enter += new System.EventHandler(this.ReqField_Enter);
             this.txtBxFN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxChar_KeyPress);
+            this.txtBxFN.Leave += new System.EventHandler(this.ReqField_Leave);
             // 
             // txtBxMN
             // 
             this.txtBxMN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxMN.ForeColor = System.Drawing.Color.DarkGray;
             this.txtBxMN.Location = new System.Drawing.Point(205, 118);
             this.txtBxMN.Name = "txtBxMN";
             this.txtBxMN.Size = new System.Drawing.Size(183, 27);
             this.txtBxMN.TabIndex = 1;
+            this.txtBxMN.Text = "(Required field)";
+            this.txtBxMN.Enter += new System.EventHandler(this.ReqField_Enter);
             this.txtBxMN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxChar_KeyPress);
+            this.txtBxMN.Leave += new System.EventHandler(this.ReqField_Leave);
             // 
             // txtBxLN
             // 
             this.txtBxLN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxLN.ForeColor = System.Drawing.Color.DarkGray;
             this.txtBxLN.Location = new System.Drawing.Point(394, 118);
             this.txtBxLN.Name = "txtBxLN";
             this.txtBxLN.Size = new System.Drawing.Size(183, 27);
             this.txtBxLN.TabIndex = 1;
+            this.txtBxLN.Text = "(Required field)";
+            this.txtBxLN.Enter += new System.EventHandler(this.ReqField_Enter);
             this.txtBxLN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxChar_KeyPress);
+            this.txtBxLN.Leave += new System.EventHandler(this.ReqField_Leave);
             // 
             // txtBxAge
             // 
             this.txtBxAge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxAge.ForeColor = System.Drawing.Color.DarkGray;
             this.txtBxAge.Location = new System.Drawing.Point(16, 173);
             this.txtBxAge.Name = "txtBxAge";
-            this.txtBxAge.Size = new System.Drawing.Size(89, 27);
+            this.txtBxAge.Size = new System.Drawing.Size(124, 27);
             this.txtBxAge.TabIndex = 1;
+            this.txtBxAge.Text = "(Required field)";
+            this.txtBxAge.Enter += new System.EventHandler(this.ReqField_Enter);
             this.txtBxAge.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNum_KeyPress);
+            this.txtBxAge.Leave += new System.EventHandler(this.ReqField_Leave);
             // 
             // labelFN
             // 
@@ -202,10 +219,14 @@ namespace ContactTracingApp
             // txtBxAddress
             // 
             this.txtBxAddress.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxAddress.ForeColor = System.Drawing.Color.DarkGray;
             this.txtBxAddress.Location = new System.Drawing.Point(20, 606);
             this.txtBxAddress.Name = "txtBxAddress";
             this.txtBxAddress.Size = new System.Drawing.Size(561, 27);
             this.txtBxAddress.TabIndex = 1;
+            this.txtBxAddress.Text = "(Required field)";
+            this.txtBxAddress.Enter += new System.EventHandler(this.ReqField_Enter);
+            this.txtBxAddress.Leave += new System.EventHandler(this.ReqField_Leave);
             // 
             // labelAddress
             // 
@@ -339,11 +360,15 @@ namespace ContactTracingApp
             // txtBxPN
             // 
             this.txtBxPN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxPN.ForeColor = System.Drawing.Color.DarkGray;
             this.txtBxPN.Location = new System.Drawing.Point(20, 550);
             this.txtBxPN.Name = "txtBxPN";
             this.txtBxPN.Size = new System.Drawing.Size(129, 27);
             this.txtBxPN.TabIndex = 1;
+            this.txtBxPN.Text = "(Required field)";
+            this.txtBxPN.Enter += new System.EventHandler(this.ReqField_Enter);
             this.txtBxPN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxNum_KeyPress);
+            this.txtBxPN.Leave += new System.EventHandler(this.ReqField_Leave);
             // 
             // SubmitButton
             // 
@@ -455,12 +480,21 @@ namespace ContactTracingApp
             this.rdoBtnQuesOneYes.Text = "Yes";
             this.rdoBtnQuesOneYes.UseVisualStyleBackColor = true;
             // 
+            // labelFocusGetter
+            // 
+            this.labelFocusGetter.AutoSize = true;
+            this.labelFocusGetter.Location = new System.Drawing.Point(20, 13);
+            this.labelFocusGetter.Name = "labelFocusGetter";
+            this.labelFocusGetter.Size = new System.Drawing.Size(0, 13);
+            this.labelFocusGetter.TabIndex = 8;
+            // 
             // ContactTracer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(587, 731);
+            this.Controls.Add(this.labelFocusGetter);
             this.Controls.Add(this.groupBoxQuesOne);
             this.Controls.Add(this.groupBoxQuesTwo);
             this.Controls.Add(this.SubmitButton);
@@ -489,9 +523,12 @@ namespace ContactTracingApp
             this.Controls.Add(this.labelAge);
             this.Controls.Add(this.labelFN);
             this.Controls.Add(this.labelMainTitle);
+            this.MaximizeBox = false;
             this.Name = "ContactTracer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing App";
+            this.Load += new System.EventHandler(this.ContactTracer_Load);
+            this.Click += new System.EventHandler(this.ContactTracer_Click);
             this.groupBoxQuesTwo.ResumeLayout(false);
             this.groupBoxQuesTwo.PerformLayout();
             this.groupBoxQuesOne.ResumeLayout(false);
@@ -537,6 +574,7 @@ namespace ContactTracingApp
         private System.Windows.Forms.RadioButton rdoBtnQuesOneNS;
         private System.Windows.Forms.RadioButton rdoBtnQuesOneNo;
         private System.Windows.Forms.RadioButton rdoBtnQuesOneYes;
+        private System.Windows.Forms.Label labelFocusGetter;
     }
 }
 

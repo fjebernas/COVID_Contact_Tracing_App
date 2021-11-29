@@ -18,6 +18,17 @@ namespace ContactTracingApp
             InitializeComponent();
         }
 
+        private void ContactTracer_Load(object sender, EventArgs e)
+        {
+            this.ActiveControl = labelFocusGetter;
+        }
+
+        private void ContactTracer_Click(object sender, EventArgs e)
+        {
+            this.ActiveControl = labelFocusGetter;
+        }
+
+
         string[] data = new string[6];
 
         string gender = "";
@@ -25,6 +36,7 @@ namespace ContactTracingApp
         string quesOneAns = "";
         string quesTwoAns = "";
         string quesThreeAns = "";
+
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
@@ -128,5 +140,27 @@ namespace ContactTracingApp
                 e.Handled = true;
             }
         }
+
+        private void ReqField_Enter(object sender, EventArgs e)
+        {
+            TextBox textbox = (TextBox)sender;
+            if (textbox.Text == "(Required field)")
+            {
+                textbox.Text = "";
+            }
+            textbox.ForeColor = Color.Black;
+        }
+
+        private void ReqField_Leave(object sender, EventArgs e)
+        {
+            TextBox textbox = (TextBox)sender;
+            if (textbox.Text == "")
+            {
+                textbox.Text = "(Required field)";
+                textbox.ForeColor = Color.DarkGray;
+            }
+        }
+
+        
     }
 }
