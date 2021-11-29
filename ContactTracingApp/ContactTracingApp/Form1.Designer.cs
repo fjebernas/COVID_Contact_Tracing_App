@@ -86,6 +86,7 @@ namespace ContactTracingApp
             this.txtBxFN.Name = "txtBxFN";
             this.txtBxFN.Size = new System.Drawing.Size(183, 27);
             this.txtBxFN.TabIndex = 1;
+            this.txtBxFN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxChar_KeyPress);
             // 
             // txtBxMN
             // 
@@ -94,6 +95,7 @@ namespace ContactTracingApp
             this.txtBxMN.Name = "txtBxMN";
             this.txtBxMN.Size = new System.Drawing.Size(183, 27);
             this.txtBxMN.TabIndex = 1;
+            this.txtBxMN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxChar_KeyPress);
             // 
             // txtBxLN
             // 
@@ -102,6 +104,7 @@ namespace ContactTracingApp
             this.txtBxLN.Name = "txtBxLN";
             this.txtBxLN.Size = new System.Drawing.Size(183, 27);
             this.txtBxLN.TabIndex = 1;
+            this.txtBxLN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxChar_KeyPress);
             // 
             // txtBxAge
             // 
@@ -360,7 +363,7 @@ namespace ContactTracingApp
             this.groupBoxQuesTwo.Location = new System.Drawing.Point(-6, 332);
             this.groupBoxQuesTwo.Margin = new System.Windows.Forms.Padding(1);
             this.groupBoxQuesTwo.Name = "groupBoxQuesTwo";
-            this.groupBoxQuesTwo.Padding = new System.Windows.Forms.Padding(1);
+            this.groupBoxQuesTwo.Padding = new System.Windows.Forms.Padding(0);
             this.groupBoxQuesTwo.Size = new System.Drawing.Size(237, 58);
             this.groupBoxQuesTwo.TabIndex = 6;
             this.groupBoxQuesTwo.TabStop = false;
@@ -369,7 +372,7 @@ namespace ContactTracingApp
             // 
             this.rdoBtnQuesTwoNS.AutoSize = true;
             this.rdoBtnQuesTwoNS.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoBtnQuesTwoNS.Location = new System.Drawing.Point(150, 23);
+            this.rdoBtnQuesTwoNS.Location = new System.Drawing.Point(149, 22);
             this.rdoBtnQuesTwoNS.Name = "rdoBtnQuesTwoNS";
             this.rdoBtnQuesTwoNS.Size = new System.Drawing.Size(75, 21);
             this.rdoBtnQuesTwoNS.TabIndex = 3;
@@ -381,7 +384,7 @@ namespace ContactTracingApp
             // 
             this.rdoBtnQuesTwoNo.AutoSize = true;
             this.rdoBtnQuesTwoNo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoBtnQuesTwoNo.Location = new System.Drawing.Point(90, 23);
+            this.rdoBtnQuesTwoNo.Location = new System.Drawing.Point(89, 22);
             this.rdoBtnQuesTwoNo.Name = "rdoBtnQuesTwoNo";
             this.rdoBtnQuesTwoNo.Size = new System.Drawing.Size(43, 21);
             this.rdoBtnQuesTwoNo.TabIndex = 4;
@@ -393,7 +396,7 @@ namespace ContactTracingApp
             // 
             this.rdoBtnQuesTwoYes.AutoSize = true;
             this.rdoBtnQuesTwoYes.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoBtnQuesTwoYes.Location = new System.Drawing.Point(30, 23);
+            this.rdoBtnQuesTwoYes.Location = new System.Drawing.Point(29, 22);
             this.rdoBtnQuesTwoYes.Name = "rdoBtnQuesTwoYes";
             this.rdoBtnQuesTwoYes.Size = new System.Drawing.Size(46, 21);
             this.rdoBtnQuesTwoYes.TabIndex = 5;
@@ -409,7 +412,7 @@ namespace ContactTracingApp
             this.groupBoxQuesOne.Location = new System.Drawing.Point(-6, 233);
             this.groupBoxQuesOne.Margin = new System.Windows.Forms.Padding(1);
             this.groupBoxQuesOne.Name = "groupBoxQuesOne";
-            this.groupBoxQuesOne.Padding = new System.Windows.Forms.Padding(1);
+            this.groupBoxQuesOne.Padding = new System.Windows.Forms.Padding(0);
             this.groupBoxQuesOne.Size = new System.Drawing.Size(237, 58);
             this.groupBoxQuesOne.TabIndex = 7;
             this.groupBoxQuesOne.TabStop = false;
@@ -418,7 +421,7 @@ namespace ContactTracingApp
             // 
             this.rdoBtnQuesOneNS.AutoSize = true;
             this.rdoBtnQuesOneNS.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoBtnQuesOneNS.Location = new System.Drawing.Point(150, 23);
+            this.rdoBtnQuesOneNS.Location = new System.Drawing.Point(149, 22);
             this.rdoBtnQuesOneNS.Name = "rdoBtnQuesOneNS";
             this.rdoBtnQuesOneNS.Size = new System.Drawing.Size(75, 21);
             this.rdoBtnQuesOneNS.TabIndex = 3;
@@ -430,7 +433,7 @@ namespace ContactTracingApp
             // 
             this.rdoBtnQuesOneNo.AutoSize = true;
             this.rdoBtnQuesOneNo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoBtnQuesOneNo.Location = new System.Drawing.Point(90, 23);
+            this.rdoBtnQuesOneNo.Location = new System.Drawing.Point(89, 22);
             this.rdoBtnQuesOneNo.Name = "rdoBtnQuesOneNo";
             this.rdoBtnQuesOneNo.Size = new System.Drawing.Size(43, 21);
             this.rdoBtnQuesOneNo.TabIndex = 4;
@@ -442,7 +445,7 @@ namespace ContactTracingApp
             // 
             this.rdoBtnQuesOneYes.AutoSize = true;
             this.rdoBtnQuesOneYes.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoBtnQuesOneYes.Location = new System.Drawing.Point(30, 23);
+            this.rdoBtnQuesOneYes.Location = new System.Drawing.Point(29, 22);
             this.rdoBtnQuesOneYes.Name = "rdoBtnQuesOneYes";
             this.rdoBtnQuesOneYes.Size = new System.Drawing.Size(46, 21);
             this.rdoBtnQuesOneYes.TabIndex = 5;

@@ -52,8 +52,11 @@ namespace ContactTracingApp
             GetQuesThreeAns(chkBxQuesOneFever);
             GetQuesThreeAns(chkBxQuesOneBD);
 
+
             StreamWriter dataTxt;
-            dataTxt = File.CreateText(@"C:\Users\franc\source\repos\Assign#6ContactTracer\ContactTracingApp\ContactTracingApp\Properties\CTAData.txt");
+            dataTxt = File.CreateText(@"C:\Users\franc\source\repos\Assign#6ContactTracer\ContactTracingApp\ContactTracingApp\Properties\Contact-Tracing-Records\" 
+                                        + data[2] + "," + data[0] + " " + data[1] + ".txt");
+
             dataTxt.WriteLine("First name: " + data[0] + "\n" +
                               "Middle name: " + data[1] + "\n" +
                               "Last name: " + data[2] + "\n" +
