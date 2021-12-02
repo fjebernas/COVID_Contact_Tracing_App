@@ -37,10 +37,11 @@ namespace ContactTracingApp
         string quesTwoAns = "";
         string quesThreeAns = "";
 
+        string placeholder = "(Required field)";
+
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            
             data[0] = txtBxFN.Text;
             data[1] = txtBxMN.Text;
             data[2] = txtBxLN.Text;
@@ -48,45 +49,52 @@ namespace ContactTracingApp
             data[4] = txtBxPN.Text;
             data[5] = txtBxAddress.Text;
 
-            GetGender(rdoBtnMale);
-            GetGender(rdoBtnFemale);
-            GetGender(rdoBtnIPNTS);
+            if (!data.Contains(placeholder))
+            {
+                GetGender(rdoBtnMale);
+                GetGender(rdoBtnFemale);
+                GetGender(rdoBtnIPNTS);
 
-            GetQuesOneAns(rdoBtnQuesOneYes);
-            GetQuesOneAns(rdoBtnQuesOneNo);
-            GetQuesOneAns(rdoBtnQuesOneNS);
+                GetQuesOneAns(rdoBtnQuesOneYes);
+                GetQuesOneAns(rdoBtnQuesOneNo);
+                GetQuesOneAns(rdoBtnQuesOneNS);
 
-            GetQuesTwoAns(rdoBtnQuesTwoYes);
-            GetQuesTwoAns(rdoBtnQuesTwoNo);
-            GetQuesTwoAns(rdoBtnQuesTwoNS);
+                GetQuesTwoAns(rdoBtnQuesTwoYes);
+                GetQuesTwoAns(rdoBtnQuesTwoNo);
+                GetQuesTwoAns(rdoBtnQuesTwoNS);
 
-            GetQuesThreeAns(chkBxQuesOneCough);
-            GetQuesThreeAns(chkBxQuesOneFever);
-            GetQuesThreeAns(chkBxQuesOneBD);
+                GetQuesThreeAns(chkBxQuesOneCough);
+                GetQuesThreeAns(chkBxQuesOneFever);
+                GetQuesThreeAns(chkBxQuesOneBD);
 
 
-            StreamWriter dataTxt;
-            dataTxt = File.CreateText(@"C:\Users\franc\source\repos\Assign#6ContactTracer\ContactTracingApp\ContactTracingApp\Properties\Contact-Tracing-Records\" 
-                                        + data[2] + "," + data[0] + " " + data[1] + ".txt");
+                StreamWriter dataTxt;
+                dataTxt = File.CreateText(@"C:\Users\franc\source\repos\Assign#6ContactTracer\ContactTracingApp\ContactTracingApp\Properties\Contact-Tracing-Records\"
+                                            + data[2] + "," + data[0] + " " + data[1] + ".txt");
 
-            dataTxt.WriteLine("First name: " + data[0] + "\n" +
-                              "Middle name: " + data[1] + "\n" +
-                              "Last name: " + data[2] + "\n" +
-                              "Age: " + data[3] + "\n" +
-                              "Phone number: " + data[4] + "\n" +
-                              "Address: " + data[5] + "\n" +
-                              "Gender: " + gender + "\n\n" +
-                              "USER'S ANSWERS:" + "\n\n" +
-                              "1. Have you traveled outside the country anytime from last month until now?\n" +
-                              quesOneAns + "\n" +
-                              "2. Have you come into contact with anyone who has traveled outside your country between the period of last month until now?\n" +
-                              quesTwoAns + "\n" +
-                              "3. Do you currently have any of the following conditions during this time?\n" +
-                              quesThreeAns + "\n"
-                              );
-            dataTxt.Close();
+                dataTxt.WriteLine("First name: " + data[0] + "\n" +
+                                  "Middle name: " + data[1] + "\n" +
+                                  "Last name: " + data[2] + "\n" +
+                                  "Age: " + data[3] + "\n" +
+                                  "Phone number: " + data[4] + "\n" +
+                                  "Address: " + data[5] + "\n" +
+                                  "Gender: " + gender + "\n\n" +
+                                  "USER'S ANSWERS:" + "\n\n" +
+                                  "1. Have you traveled outside the country anytime from last month until now?\n" +
+                                  quesOneAns + "\n" +
+                                  "2. Have you come into contact with anyone who has traveled outside your country between the period of last month until now?\n" +
+                                  quesTwoAns + "\n" +
+                                  "3. Do you currently have any of the following conditions during this time?\n" +
+                                  quesThreeAns + "\n"
+                                  );
+                dataTxt.Close();
 
-            MessageBox.Show("Submitted successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Submitted successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Please fill out all required fields", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private string GetGender(RadioButton radioButton)
@@ -144,7 +152,7 @@ namespace ContactTracingApp
         private void ReqField_Enter(object sender, EventArgs e)
         {
             TextBox textbox = (TextBox)sender;
-            if (textbox.Text == "(Required field)")
+            if (textbox.Text == placeholder)
             {
                 textbox.Text = "";
             }
@@ -156,7 +164,7 @@ namespace ContactTracingApp
             TextBox textbox = (TextBox)sender;
             if (textbox.Text == "")
             {
-                textbox.Text = "(Required field)";
+                textbox.Text = placeholder;
                 textbox.ForeColor = Color.DarkGray;
             }
         }

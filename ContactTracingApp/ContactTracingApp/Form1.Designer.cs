@@ -64,8 +64,12 @@ namespace ContactTracingApp
             this.rdoBtnQuesOneNo = new System.Windows.Forms.RadioButton();
             this.rdoBtnQuesOneYes = new System.Windows.Forms.RadioButton();
             this.labelFocusGetter = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.groupBoxQuesTwo.SuspendLayout();
             this.groupBoxQuesOne.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelMainTitle
@@ -73,7 +77,8 @@ namespace ContactTracingApp
             this.labelMainTitle.AutoSize = true;
             this.labelMainTitle.BackColor = System.Drawing.Color.Transparent;
             this.labelMainTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMainTitle.Location = new System.Drawing.Point(167, 23);
+            this.labelMainTitle.ForeColor = System.Drawing.Color.White;
+            this.labelMainTitle.Location = new System.Drawing.Point(173, 22);
             this.labelMainTitle.Name = "labelMainTitle";
             this.labelMainTitle.Size = new System.Drawing.Size(253, 39);
             this.labelMainTitle.TabIndex = 0;
@@ -82,11 +87,11 @@ namespace ContactTracingApp
             // 
             // txtBxFN
             // 
-            this.txtBxFN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxFN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxFN.ForeColor = System.Drawing.Color.DarkGray;
             this.txtBxFN.Location = new System.Drawing.Point(16, 118);
             this.txtBxFN.Name = "txtBxFN";
-            this.txtBxFN.Size = new System.Drawing.Size(183, 27);
+            this.txtBxFN.Size = new System.Drawing.Size(183, 26);
             this.txtBxFN.TabIndex = 1;
             this.txtBxFN.Text = "(Required field)";
             this.txtBxFN.Enter += new System.EventHandler(this.ReqField_Enter);
@@ -95,11 +100,11 @@ namespace ContactTracingApp
             // 
             // txtBxMN
             // 
-            this.txtBxMN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxMN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxMN.ForeColor = System.Drawing.Color.DarkGray;
             this.txtBxMN.Location = new System.Drawing.Point(205, 118);
             this.txtBxMN.Name = "txtBxMN";
-            this.txtBxMN.Size = new System.Drawing.Size(183, 27);
+            this.txtBxMN.Size = new System.Drawing.Size(183, 26);
             this.txtBxMN.TabIndex = 1;
             this.txtBxMN.Text = "(Required field)";
             this.txtBxMN.Enter += new System.EventHandler(this.ReqField_Enter);
@@ -108,11 +113,11 @@ namespace ContactTracingApp
             // 
             // txtBxLN
             // 
-            this.txtBxLN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxLN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxLN.ForeColor = System.Drawing.Color.DarkGray;
             this.txtBxLN.Location = new System.Drawing.Point(394, 118);
             this.txtBxLN.Name = "txtBxLN";
-            this.txtBxLN.Size = new System.Drawing.Size(183, 27);
+            this.txtBxLN.Size = new System.Drawing.Size(183, 26);
             this.txtBxLN.TabIndex = 1;
             this.txtBxLN.Text = "(Required field)";
             this.txtBxLN.Enter += new System.EventHandler(this.ReqField_Enter);
@@ -121,11 +126,11 @@ namespace ContactTracingApp
             // 
             // txtBxAge
             // 
-            this.txtBxAge.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxAge.ForeColor = System.Drawing.Color.DarkGray;
             this.txtBxAge.Location = new System.Drawing.Point(16, 173);
             this.txtBxAge.Name = "txtBxAge";
-            this.txtBxAge.Size = new System.Drawing.Size(124, 27);
+            this.txtBxAge.Size = new System.Drawing.Size(129, 26);
             this.txtBxAge.TabIndex = 1;
             this.txtBxAge.Text = "(Required field)";
             this.txtBxAge.Enter += new System.EventHandler(this.ReqField_Enter);
@@ -218,11 +223,11 @@ namespace ContactTracingApp
             // 
             // txtBxAddress
             // 
-            this.txtBxAddress.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxAddress.ForeColor = System.Drawing.Color.DarkGray;
             this.txtBxAddress.Location = new System.Drawing.Point(20, 606);
             this.txtBxAddress.Name = "txtBxAddress";
-            this.txtBxAddress.Size = new System.Drawing.Size(561, 27);
+            this.txtBxAddress.Size = new System.Drawing.Size(555, 26);
             this.txtBxAddress.TabIndex = 1;
             this.txtBxAddress.Text = "(Required field)";
             this.txtBxAddress.Enter += new System.EventHandler(this.ReqField_Enter);
@@ -359,11 +364,11 @@ namespace ContactTracingApp
             // 
             // txtBxPN
             // 
-            this.txtBxPN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxPN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxPN.ForeColor = System.Drawing.Color.DarkGray;
             this.txtBxPN.Location = new System.Drawing.Point(20, 550);
             this.txtBxPN.Name = "txtBxPN";
-            this.txtBxPN.Size = new System.Drawing.Size(129, 27);
+            this.txtBxPN.Size = new System.Drawing.Size(129, 26);
             this.txtBxPN.TabIndex = 1;
             this.txtBxPN.Text = "(Required field)";
             this.txtBxPN.Enter += new System.EventHandler(this.ReqField_Enter);
@@ -373,8 +378,10 @@ namespace ContactTracingApp
             // SubmitButton
             // 
             this.SubmitButton.BackColor = System.Drawing.Color.LightSalmon;
+            this.SubmitButton.FlatAppearance.BorderSize = 0;
+            this.SubmitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SubmitButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubmitButton.Location = new System.Drawing.Point(244, 658);
+            this.SubmitButton.Location = new System.Drawing.Point(244, 19);
             this.SubmitButton.Name = "SubmitButton";
             this.SubmitButton.Size = new System.Drawing.Size(100, 47);
             this.SubmitButton.TabIndex = 5;
@@ -488,16 +495,37 @@ namespace ContactTracingApp
             this.labelFocusGetter.Size = new System.Drawing.Size(0, 13);
             this.labelFocusGetter.TabIndex = 8;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Controls.Add(this.labelMainTitle);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(587, 82);
+            this.panel1.TabIndex = 9;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DimGray;
+            this.panel2.Controls.Add(this.SubmitButton);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 654);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(587, 92);
+            this.panel2.TabIndex = 10;
+            // 
             // ContactTracer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(587, 731);
+            this.ClientSize = new System.Drawing.Size(587, 746);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelFocusGetter);
             this.Controls.Add(this.groupBoxQuesOne);
             this.Controls.Add(this.groupBoxQuesTwo);
-            this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.chkBxQuesOneBD);
             this.Controls.Add(this.chkBxQuesOneCough);
             this.Controls.Add(this.chkBxQuesOneFever);
@@ -522,7 +550,6 @@ namespace ContactTracingApp
             this.Controls.Add(this.labelAddress);
             this.Controls.Add(this.labelAge);
             this.Controls.Add(this.labelFN);
-            this.Controls.Add(this.labelMainTitle);
             this.MaximizeBox = false;
             this.Name = "ContactTracer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -533,6 +560,9 @@ namespace ContactTracingApp
             this.groupBoxQuesTwo.PerformLayout();
             this.groupBoxQuesOne.ResumeLayout(false);
             this.groupBoxQuesOne.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -575,6 +605,8 @@ namespace ContactTracingApp
         private System.Windows.Forms.RadioButton rdoBtnQuesOneNo;
         private System.Windows.Forms.RadioButton rdoBtnQuesOneYes;
         private System.Windows.Forms.Label labelFocusGetter;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 
