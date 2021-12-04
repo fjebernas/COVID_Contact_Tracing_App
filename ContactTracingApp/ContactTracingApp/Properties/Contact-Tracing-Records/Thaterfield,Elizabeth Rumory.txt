@@ -1,17 +1,17 @@
-First name: Jotaro
-Middle name: Joestar
-Last name: Kujo
-Age: 17
-Phone number: 21390478
-Address: Somewhere in Japan
-Gender: Male
+First name: Elizabeth
+Middle name: Rumory
+Last name: Thaterfield
+Age: 24
+Phone number: 8890008
+Address: 1233 Stocksbrook Street AL
+Gender: Female
 
 USER'S ANSWERS:
 
 1. Have you traveled outside the country anytime from last month until now?
-Yes
+No
 2. Have you come into contact with anyone who has traveled outside your country between the period of last month until now?
-Yes
+Not sure
 3. Do you currently have any of the following conditions during this time?
-Cough
+Breathing Difficulty
 

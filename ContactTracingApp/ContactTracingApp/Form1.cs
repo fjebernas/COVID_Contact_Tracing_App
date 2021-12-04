@@ -27,7 +27,7 @@ namespace ContactTracingApp
         {
             this.ActiveControl = labelFocusGetter;
         }
-
+        
 
         string[] data = new string[6];
 
@@ -128,7 +128,7 @@ namespace ContactTracingApp
         {
             if (checkbox.Checked)
             {
-                quesThreeAns = checkbox.Text;
+                quesThreeAns = quesThreeAns + checkbox.Text + "\n";
             }
             return quesThreeAns;
         }

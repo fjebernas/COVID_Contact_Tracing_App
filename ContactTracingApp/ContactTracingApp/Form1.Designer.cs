@@ -29,6 +29,7 @@ namespace ContactTracingApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactTracer));
             this.labelMainTitle = new System.Windows.Forms.Label();
             this.txtBxFN = new System.Windows.Forms.TextBox();
             this.txtBxMN = new System.Windows.Forms.TextBox();
@@ -66,10 +67,12 @@ namespace ContactTracingApp
             this.labelFocusGetter = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxQuesTwo.SuspendLayout();
             this.groupBoxQuesOne.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelMainTitle
@@ -78,11 +81,11 @@ namespace ContactTracingApp
             this.labelMainTitle.BackColor = System.Drawing.Color.Transparent;
             this.labelMainTitle.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMainTitle.ForeColor = System.Drawing.Color.White;
-            this.labelMainTitle.Location = new System.Drawing.Point(173, 22);
+            this.labelMainTitle.Location = new System.Drawing.Point(130, 20);
             this.labelMainTitle.Name = "labelMainTitle";
-            this.labelMainTitle.Size = new System.Drawing.Size(253, 39);
+            this.labelMainTitle.Size = new System.Drawing.Size(347, 39);
             this.labelMainTitle.TabIndex = 0;
-            this.labelMainTitle.Text = "Contact Tracer";
+            this.labelMainTitle.Text = "Contact Tracing App";
             this.labelMainTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtBxFN
@@ -498,6 +501,7 @@ namespace ContactTracingApp
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.labelMainTitle);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -515,11 +519,22 @@ namespace ContactTracingApp
             this.panel2.Size = new System.Drawing.Size(587, 92);
             this.panel2.TabIndex = 10;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(66, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // ContactTracer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(587, 746);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -550,6 +565,7 @@ namespace ContactTracingApp
             this.Controls.Add(this.labelAddress);
             this.Controls.Add(this.labelAge);
             this.Controls.Add(this.labelFN);
+            this.DoubleBuffered = true;
             this.MaximizeBox = false;
             this.Name = "ContactTracer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -563,6 +579,7 @@ namespace ContactTracingApp
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -607,6 +624,7 @@ namespace ContactTracingApp
         private System.Windows.Forms.Label labelFocusGetter;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

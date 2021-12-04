@@ -1,0 +1,17 @@
+First name: Jose
+Middle name: dela
+Last name: Cruz
+Age: 11
+Phone number: 789456
+Address: Manila
+Gender: Male
+
+USER'S ANSWERS:
+
+1. Have you traveled outside the country anytime from last month until now?
+No
+2. Have you come into contact with anyone who has traveled outside your country between the period of last month until now?
+No
+3. Do you currently have any of the following conditions during this time?
+
+

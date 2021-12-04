@@ -1,0 +1,17 @@
+First name: David
+Middle name: Jones
+Last name: Stones
+Age: 22
+Phone number: 4564322
+Address: 1122 Penrose Street CA
+Gender: Male
+
+USER'S ANSWERS:
+
+1. Have you traveled outside the country anytime from last month until now?
+No
+2. Have you come into contact with anyone who has traveled outside your country between the period of last month until now?
+Yes
+3. Do you currently have any of the following conditions during this time?
+Breathing Difficulty
+

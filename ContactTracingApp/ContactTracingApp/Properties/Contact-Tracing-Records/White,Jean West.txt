@@ -1,17 +1,17 @@
-First name: Kenshin
-Middle name: Battousai
-Last name: Himura
-Age: 40
-Phone number: 459855433
-Address: Kyoto, Japan
-Gender: Male
+First name: Jean
+Middle name: West
+Last name: White
+Age: 24
+Phone number: 4544446
+Address: 1334 Cornfield Street PHI
+Gender: Female
 
 USER'S ANSWERS:
 
 1. Have you traveled outside the country anytime from last month until now?
-No
+Yes
 2. Have you come into contact with anyone who has traveled outside your country between the period of last month until now?
 Yes
 3. Do you currently have any of the following conditions during this time?
-Cough
+Breathing Difficulty
 
