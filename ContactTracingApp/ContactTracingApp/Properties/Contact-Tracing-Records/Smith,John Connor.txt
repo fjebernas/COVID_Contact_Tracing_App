@@ -1,0 +1,19 @@
+First name: John
+Middle name: Connor
+Last name: Smith
+Age: 33
+Phone number: 8899002
+Address: 4th Avenue CA
+Gender: Male
+
+USER'S ANSWERS:
+
+1. Have you traveled outside the country anytime from last month until now?
+Yes
+2. Have you come into contact with anyone who has traveled outside your country between the period of last month until now?
+Yes
+3. Do you currently have any of the following conditions during this time?
+Cough
+Fever
+
+

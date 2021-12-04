@@ -66,13 +66,13 @@ namespace ContactTracingApp
             this.rdoBtnQuesOneYes = new System.Windows.Forms.RadioButton();
             this.labelFocusGetter = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.groupBoxQuesTwo.SuspendLayout();
             this.groupBoxQuesOne.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelMainTitle
@@ -509,16 +509,6 @@ namespace ContactTracingApp
             this.panel1.Size = new System.Drawing.Size(587, 82);
             this.panel1.TabIndex = 9;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DimGray;
-            this.panel2.Controls.Add(this.SubmitButton);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 654);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(587, 92);
-            this.panel2.TabIndex = 10;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -528,6 +518,16 @@ namespace ContactTracingApp
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DimGray;
+            this.panel2.Controls.Add(this.SubmitButton);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 654);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(587, 92);
+            this.panel2.TabIndex = 10;
             // 
             // ContactTracer
             // 
@@ -578,8 +578,8 @@ namespace ContactTracingApp
             this.groupBoxQuesOne.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

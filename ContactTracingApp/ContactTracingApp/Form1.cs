@@ -90,6 +90,9 @@ namespace ContactTracingApp
                 dataTxt.Close();
 
                 MessageBox.Show("Submitted successfully", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                ResetAllControls(this);
+                
             }
             else
             {
@@ -170,5 +173,41 @@ namespace ContactTracingApp
         }
 
         
+        private void ResetAllControls(Control form)
+        {
+            foreach (Control control in form.Controls)
+            {
+                if (control is TextBox)
+                {
+                    TextBox textBox = (TextBox)control;
+                    textBox.Text = placeholder;
+                    textBox.ForeColor = Color.DarkGray;
+                }
+
+                /*if (control is RadioButton)
+                {
+                    RadioButton radioButton = (RadioButton)control;
+                    radioButton.
+                }*/
+
+                rdoBtnMale.Checked = false;
+                rdoBtnFemale.Checked = false;
+                rdoBtnIPNTS.Checked = false;
+
+                rdoBtnQuesOneYes.Checked = false;
+                rdoBtnQuesOneNo.Checked = false;
+                rdoBtnQuesOneNS.Checked = false;
+
+                rdoBtnQuesTwoYes.Checked = false;
+                rdoBtnQuesTwoNo.Checked = false;
+                rdoBtnQuesTwoNS.Checked = false;
+
+                if (control is CheckBox)
+                {
+                    CheckBox checkBox = (CheckBox)control;
+                    checkBox.Checked = false;
+                }
+            }
+        }
     }
 }
